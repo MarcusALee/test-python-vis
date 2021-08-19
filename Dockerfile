@@ -9,4 +9,5 @@ COPY test.csv /app/
 WORKDIR /app
 #COPY python_vis_1_dashapp.py /
 
-CMD gunicorn -b 0.0.0.0:80 app:server
+#CMD gunicorn -b 0.0.0.0:80 app:server
+CMD gunicorn -b 0.0.0.0:80 python_vis_1_dashapp:server
